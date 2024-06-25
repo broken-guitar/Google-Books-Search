@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
 import BooksNavbar from "./components/BooksNavbar/BooksNavbar";
@@ -9,11 +9,6 @@ import NoMatch from "./pages/NoMatch";
 
 import "./App.css"
 
-// import Books from "./pages/Books";
-// import Nav from "./components/Nav";
-
-
-
 class App extends Component {
  
    render() {
@@ -22,15 +17,15 @@ class App extends Component {
             <Router>
                   <div className="body-div">
                      <BooksNavbar />
-                     <Container>
-                        <Row>
-                            <Col >
-                                <Switch>
-                                    <Route exact path="/"        component={Saved} />
-                                    <Route exact path="/saved"   component={Saved} />
-                                    <Route exact path="/search"  component={Search} />
+                     <Container> Container
+                        <Row> Row
+                            <Col >Col
+                                <Routes> Routes
+                                    <Route path="/"        element={<Saved />} />
+                                    <Route path="/saved"   element={<Saved />} />
+                                    <Route path="/search"  element={<Search />} />
                                     <Route component={NoMatch} />
-                              </Switch>
+                              </Routes>
                            </Col>
                         </Row>
                      </Container>

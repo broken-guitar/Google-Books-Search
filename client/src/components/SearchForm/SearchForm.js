@@ -9,7 +9,7 @@ function SearchForm(props) {
    return (
 
         <Form >
-            <Form.Row>
+            <Row>
                <Col xs="9" sm="10">
                 {/* <Form.Label htmlFor="book-search">Search</Form.Label> */}
                 <Form.Control
@@ -30,7 +30,7 @@ function SearchForm(props) {
                 >Search
                 </Button>
                 </Col>
-            </Form.Row>
+            </Row>
         </Form>
    );
 }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Jumbotron } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 
 import BookList from "../components/BookList/BookList";
 
@@ -28,9 +28,9 @@ export default class Saved extends Component { // <-- another way of declaring e
             return (
             <div>
             <Container fluid>
-                <Jumbotron className="text-center">
+                <div class="jumbotron" className="text-center">
                 <h1>Saved Books</h1>
-                </Jumbotron>
+                </div>
                 <Row>
                 <Col sm="12">
                         <BookList

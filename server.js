@@ -3,7 +3,7 @@ const app = express();
 // socket.io stuff
 const server = require("http").createServer(app) // passing app to server
 // const io = require("socket.io")(server) // then passing server to socket.io
-const mongoose = require("mongoose");
+//const mongoose = require("mongoose");
 
 require("dotenv").config();
 
@@ -29,7 +29,7 @@ app.get("*", function(req, res) {
 });
   
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks");
+//mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks");
 
 // io.on("connection", (socket) => {
 //     console.log("Client connected");
